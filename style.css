@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container{
+    text-align: right;
+    width: 80%;
+    margin: auto;
+}
+
+
+.header{
+    padding: 20px;
+    color: white;
+    background-color: rgb(89, 202, 89);
+}
+
+.header h1{
+    position: relative;
+    right: 50%;
+    display: inline;
+}
+.header .searchbar{
+    font-family: 'Tajawal', sans-serif;
+    text-align: right;
+    border: 2px solid #f0f0f0;
+    padding: 8px;
+    width: 35%;
+    border-radius: 3px;
+}
+.searchbar:focus{
+    outline: none;
+    border-color: #333;
+}
+
+#input {
+    font-family: 'Tajawal', sans-serif;
+    padding: 10px;
+    width: 40%;
+    font-size: 20px;
+    background-color:#f9fafb;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #333;
+    box-sizing: border-box;
+}
+
+#input:focus{
+    outline: none;
+    border-color: #333;
+}
+
+.form.error #input {
+    border-color: #e74c3c;
+}
+
+
+#btn {
+    cursor: pointer;
+    margin: -2px;
+    padding: 13px;
+    width: 10%;
+    background-color: lightgreen;
+    outline: none;
+    border-radius: 7px;
+    box-shadow:  0 2px 5px rgba(0,0,0,0.3);
+    border-style: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#btn:hover {
+    color: #eee;
+}
+
+.form small {
+    display: block;
+    visibility: hidden;
+    font-weight: bold;
+    
+}
+
+.form.error small{
+    display: block;
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.itemsh{
+    text-align: right;
+    color: #333;
+
+}
+
+ul {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+li{
+    cursor: pointer;
+    text-align: right;
+    position: relative;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    width: 100%;
+    border: 1px;
+    margin-bottom: 5px;
+    border-right: 3px solid #ddd;
+    word-wrap: break-word;
+}
+
+li:hover{
+    transform: scale(1.01);
+    opacity: 0.5;
+}
+
+.libtn{
+    width: 50x;
+    background-color: #e74c3c;
+    color: #fff;  
+    left: 30px;
+    position: absolute;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: none;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+.libtn:hover{
+    background-color: red;
+}
+
+.itemscontainer{
+    text-align: start;
+}
+
+
+
+.hold {
+    border: solid #ccc 4px; 
+}
+
+.invisible {
+    display: none;
+}
+
+.completed {
+    background-color: lightgreen ;
+    border-right: 3px solid green ;
+    text-decoration: line-through;
+    color: #333;
+    opacity: 0.5;
+    position: relative;
+}
+
+
+.removeItem{
+    background-color: #e74c3c;
+    opacity: 0.5;
+}
+
+
+
+@media (max-width: 500px){
+    .container{
+        width: 70%;
+    }
+    #input{
+        width: 100%;
+    }
+    #btn{
+        width: 100%;
+    }
+    .header h1{
+        right: 30%;
+    }
+}
+
+
+@media (max-width: 420px){
+
+    .header .searchbar {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px){
+
+    .header h1{
+        text-align: center;
+    }
+    .header .searchbar {
+        margin-top: 20px ;
+        width: 100%;
+    }
+}
