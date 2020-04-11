@@ -100,10 +100,15 @@ body {
     color: #e74c3c;
 }
 
+.form .small{
+    visibility: visible;
+    color: rgba(0, 0, 0, 0.329)
+}
+
 .itemsh{
     text-align: right;
     color: #333;
-
+    margin: 15px 0 0 0
 }
 
 ul {
